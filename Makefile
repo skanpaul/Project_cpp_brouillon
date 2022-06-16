@@ -6,17 +6,17 @@
 #    By: ski <ski@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/16 09:44:43 by ski               #+#    #+#              #
-#    Updated: 2022/06/16 10:52:14 by ski              ###   ########.fr        #
+#    Updated: 2022/06/16 11:12:36 by ski              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= bobo
+NAME	= a.out
 # **************************************************************************** #
 CC		= g++
 CFLAG	= -Wall -Wextra -Werror
 
 SRC		= Main.cpp
-OBJ		= $(SRC:.c=.o)
+OBJ		= $(SRC:.cpp=.o)
 
 RM		= rm -f
 
@@ -24,7 +24,7 @@ RM		= rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAG) $(SRC) -o $(NAME)
+	$(CC) $(CFLAG) $(OBJPATH)$^ -o $(NAME)
 
 clean:
 	$(RM) $(OBJ)
