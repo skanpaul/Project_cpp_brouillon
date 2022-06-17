@@ -6,7 +6,7 @@
 #    By: ski <ski@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/16 09:44:43 by ski               #+#    #+#              #
-#    Updated: 2022/06/17 10:34:57 by ski              ###   ########.fr        #
+#    Updated: 2022/06/17 14:11:10 by ski              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC		= g++
 CFLAG	= -Wall -Wextra -Werror
 
 SRC		= 	Main.cpp \
-			class.Voiture.cpp
+			class.Person_A.cpp
 OBJ		= $(SRC:.cpp=.o)
 
 RM		= rm -f

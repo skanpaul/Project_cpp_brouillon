@@ -6,20 +6,16 @@
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 12:27:01 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/17 14:15:34 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "class.Voiture.hpp"
+#include "class.Person_A.hpp"
 /* ************************************************************************** */
-int main()
+int main(void)
 {
-	Voiture	auris_hybride;
-
-	auris_hybride.poids_kilogramme = 3561;
-	
-	auris_hybride.freiner();
+	Person_A joueur_1('S', 38);
 
 	return (0);	
 }

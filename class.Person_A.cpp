@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   class.voiture.cpp                                  :+:      :+:    :+:   */
+/*   class.Person_A.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 08:47:24 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 13:41:38 by ski              ###   ########.fr       */
+/*   Created: 2022/06/17 13:55:57 by ski               #+#    #+#             */
+/*   Updated: 2022/06/17 14:14:40 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "class.Voiture.hpp"
+#include "class.Person_A.hpp"
 
 /* ************************************************************************** */
-Voiture::Voiture(void)
+Person_A::Person_A(char ext_lettre, int ext_age)
 {
-	std::cout << "Une voiture a été créée" << std::endl;
-	this->freiner();
-}
+	std::cout << "CONSTRUCTION" << std::endl;
+	this->age = ext_age;
+	this->lettre = ext_lettre;
 
+	std::cout << "Le lettre inscrit est: " << this->lettre << std::endl;
+	std::cout << "L'age inscrit est: " << this->age << std::endl;
+	this->dormir();
+	
+}
 /* ************************************************************************** */
-Voiture::~Voiture(void)
+Person_A::~Person_A(void)
 {
-	std::cout << "Une voiture a été détruite" << std::endl;
-	this->poids_kilogramme = 0;
+	std::cout << "DESTRUCTION" << std::endl;
 }
-
 /* ************************************************************************** */
-void Voiture::freiner(void)
+void Person_A::manger(void)
 {
-	std::cout << "Cette voiture est en train de freiner" << std::endl;
+	std::cout << this->lettre << " est en train de manger" << std::endl;	
 }
-
+/* ************************************************************************** */
+void Person_A::dormir(void)
+{
+	std::cout << this->lettre << " est en train de dormir" << std::endl;
+}
 /* ************************************************************************** */

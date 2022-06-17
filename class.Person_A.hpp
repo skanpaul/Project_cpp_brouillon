@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   class.voiture.hpp                                  :+:      :+:    :+:   */
+/*   class.Person_A.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 08:47:22 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 12:22:43 by ski              ###   ########.fr       */
+/*   Created: 2022/06/17 13:52:32 by ski               #+#    #+#             */
+/*   Updated: 2022/06/17 14:12:29 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLASS_VOITURE_H
-# define CLASS_VOITURE_H
-
+#ifndef CLASS_PERSON_A_HPP
+# define CLASS_PERSON_A_HPP
 /* ************************************************************************** */
-class Voiture
+class Person_A
 {
 public:
 
-	int poids_kilogramme;
-
-	Voiture(void);
-	~Voiture(void);
-
-	void freiner(void);
+	char	lettre;
+	int		age;
+	
+	Person_A(char ext_lettre, int ext_age);
+	~Person_A(void);
+	
+	void manger(void);
+	void dormir(void);
+	
 };
-
 /* ************************************************************************** */
 #endif
