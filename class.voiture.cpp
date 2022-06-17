@@ -6,7 +6,7 @@
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 08:47:24 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 10:35:54 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/17 13:19:02 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,20 @@
 Voiture::Voiture(void)
 {
 	std::cout << "Une voiture a été créée" << std::endl;
+	this->freiner();
 }
 
 /* ************************************************************************** */
 Voiture::~Voiture(void)
 {
 	std::cout << "Une voiture a été détruite" << std::endl;
+	this->poids_kilogramme = 0;
+}
+
+/* ************************************************************************** */
+void Voiture::freiner(void)
+{
+	std::cout << "Cette voiture est en train de freiner" << std::endl;
 }
 
 /* ************************************************************************** */
