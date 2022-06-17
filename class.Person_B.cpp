@@ -1,42 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   class.Person_A.cpp                                 :+:      :+:    :+:   */
+/*   class.Person_B.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 13:55:57 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 14:17:38 by ski              ###   ########.fr       */
+/*   Created: 2022/06/17 14:20:39 by ski               #+#    #+#             */
+/*   Updated: 2022/06/17 14:24:23 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "class.Person_A.hpp"
-
+#include "class.Person_B.hpp"
 /* ************************************************************************** */
-Person_A::Person_A(char ext_lettre, int ext_age)
+Person_B::Person_B(char ext_lettre, int ext_age): lettre(ext_lettre), age(ext_age)
 {
 	std::cout << "CONSTRUCTION" << std::endl;
-	this->age = ext_age;
-	this->lettre = ext_lettre;
-
 	std::cout << "Le lettre inscrit est: " << this->lettre << std::endl;
 	std::cout << "L'age inscrit est: " << this->age << std::endl;
-	this->dormir();	
+	this->dormir();		
 }
 
-Person_A::~Person_A(void)
+Person_B::~Person_B(void)
 {
 	std::cout << "DESTRUCTION" << std::endl;
 }
 
-void Person_A::manger(void)
+void Person_B::manger(void)
 {
 	std::cout << this->lettre << " est en train de manger" << std::endl;	
 }
 
-void Person_A::dormir(void)
+void Person_B::dormir(void)
 {
 	std::cout << this->lettre << " est en train de dormir" << std::endl;
 }
+
 /* ************************************************************************** */

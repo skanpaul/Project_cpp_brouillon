@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Main.cpp                                           :+:      :+:    :+:   */
+/*   class.Person_B.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 14:25:06 by ski              ###   ########.fr       */
+/*   Created: 2022/06/17 14:17:52 by ski               #+#    #+#             */
+/*   Updated: 2022/06/17 14:23:34 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "class.Person_A.hpp"
-#include "class.Person_B.hpp"
+#ifndef CLASS_PERSON_B_HPP
+# define CLASS_PERSON_B_HPP
 /* ************************************************************************** */
-int main(void)
+class Person_B
 {
-	Person_A joueur_1('S', 38);
-	Person_B joueur_2('Q', 27);
+public:
+	char	lettre;
+	int		age;
 
-	return (0);	
-}
+	Person_B(char ext_lettre, int ext_age);
+	~Person_B(void);
 
+	void manger(void);
+	void dormir(void);
+};
 /* ************************************************************************** */
+#endif
