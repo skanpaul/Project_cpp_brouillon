@@ -6,7 +6,7 @@
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 13:55:57 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 14:17:38 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/17 14:30:01 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@
 Person_A::Person_A(char ext_lettre, int ext_age)
 {
 	std::cout << "CONSTRUCTION" << std::endl;
+	
+	// --- Ci-dessous, c'est une méthode dangereuse
 	this->age = ext_age;
 	this->lettre = ext_lettre;
+	// --------------------------------------------
 
 	std::cout << "Le lettre inscrit est: " << this->lettre << std::endl;
 	std::cout << "L'age inscrit est: " << this->age << std::endl;
