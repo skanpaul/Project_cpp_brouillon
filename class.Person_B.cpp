@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   class.Person_B.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 14:20:39 by ski               #+#    #+#             */
-/*   Updated: 2022/06/17 14:24:23 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/19 09:08:36 by sorakann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "class.Person_B.hpp"
 /* ************************************************************************** */
-Person_B::Person_B(char ext_lettre, int ext_age): lettre(ext_lettre), age(ext_age)
+Person_B::Person_B(char ext_lettre, int ext_age)
+ : lettre(ext_lettre), age(ext_age)
 {
 	std::cout << "CONSTRUCTION" << std::endl;
 	std::cout << "Le lettre inscrit est: " << this->lettre << std::endl;
