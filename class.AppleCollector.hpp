@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   class.AppleCollector.hpp                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 16:42:16 by ski               #+#    #+#             */
-/*   Updated: 2022/06/19 16:45:16 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/19 20:15:12 by sorakann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifdef CLASS_APPLECOLLECTOR_HPP
+#ifndef CLASS_APPLECOLLECTOR_HPP
 # define CLASS_APPLECOLLECTOR_HPP
 /* ************************************************************************** */
 class AppleCollector
@@ -21,9 +21,15 @@ public:
 
 	int		GetAmount(void) const;
 	void	SetAmount(int ext_amount);
-
+	
+	void	ShowAmount(void) const;
+	
+	void	AddApple(int new_apple);
+	bool	IsSameAmount(AppleCollector *ptr_machine);
+	
+	int		temperature;
 private:
 	int amount;
-}
+};
 /* ************************************************************************** */
 #endif

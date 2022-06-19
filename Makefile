@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ski <ski@student.42.fr>                    +#+  +:+       +#+         #
+#    By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/16 09:44:43 by ski               #+#    #+#              #
-#    Updated: 2022/06/19 13:06:23 by ski              ###   ########.fr        #
+#    Updated: 2022/06/19 19:56:12 by sorakann         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC		= g++
 CFLAG	= -Wall -Wextra -Werror -std=c++98 -pedantic
 
 SRC		= 	Main.cpp \
-			class.Appareil.cpp
+			class.AppleCollector.cpp
 OBJ		= $(SRC:.cpp=.o)
 
 RM		= rm -f
