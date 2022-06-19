@@ -6,7 +6,7 @@
 /*   By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/19 20:15:36 by sorakann         ###   ########.fr       */
+/*   Updated: 2022/06/19 20:37:23 by sorakann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,12 @@ int main(void)
 	AppleCollector m_1;
 	AppleCollector m_2;
 
-	m_1.amount = 6;
-
 	m_1.SetAmount(0);
 	m_1.ShowAmount();
 	m_1.AddApple(5);
 	m_1.ShowAmount();
 
-	m_2.SetAmount(0);
+	m_2.SetAmount(5);
 	m_2.ShowAmount();
 
 	if (m_1.IsSameAmount(&m_2))
