@@ -6,14 +6,14 @@
 #    By: ski <ski@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/16 09:44:43 by ski               #+#    #+#              #
-#    Updated: 2022/06/19 11:11:17 by ski              ###   ########.fr        #
+#    Updated: 2022/06/19 13:06:23 by ski              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
 # **************************************************************************** #
 CC		= g++
-CFLAG	= -Wall -Wextra -Werror
+CFLAG	= -Wall -Wextra -Werror -std=c++98 -pedantic
 
 SRC		= 	Main.cpp \
 			class.Appareil.cpp
