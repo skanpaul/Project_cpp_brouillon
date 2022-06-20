@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/19 20:37:23 by sorakann         ###   ########.fr       */
+/*   Updated: 2022/06/20 07:56:20 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int main(void)
 
 	m_2.SetAmount(5);
 	m_2.ShowAmount();
+
 
 	if (m_1.IsSameAmount(&m_2))
 		std::cout << "m_1 has the same amount of apple thant m_2" << std::endl;

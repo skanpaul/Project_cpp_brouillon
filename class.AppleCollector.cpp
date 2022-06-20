@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   class.AppleCollector.cpp                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:52:41 by sorakann          #+#    #+#             */
-/*   Updated: 2022/06/19 20:39:32 by sorakann         ###   ########.fr       */
+/*   Updated: 2022/06/20 07:56:26 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void AppleCollector::SetAmount(int ext_amount)
 /* ************************************************************************** */
 void AppleCollector::AddApple(int new_apple)
 {
-	this->_amount =+ new_apple;
+	this->_amount += new_apple;
 }
 
 /* ************************************************************************** */
