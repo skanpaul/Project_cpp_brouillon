@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Main.cpp                                           :+:      :+:    :+:   */
+/*   class.Iphone.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/20 17:25:01 by ski              ###   ########.fr       */
+/*   Created: 2022/06/20 12:02:26 by ski               #+#    #+#             */
+/*   Updated: 2022/06/20 12:14:11 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "class.Iphone.hpp"
-
-void fct1(void);
-
+#ifndef CLASS_IPHONE_HPP
+# define CLASS_IPHONE_HPP
 /* ************************************************************************** */
-int main(void)
+class Iphone
 {
-	int b;
-	
-	std::cout << "CLASS: Nombre d'iPhone: "<< Iphone::GetNumberOfIphone() << std::endl;
-	
-	Iphone Aaa;	
+public:
+	Iphone(void);
+	~Iphone(void);
 
-	std::cout << "Nombre d'iPhone: "<< Iphone::GetNumberOfIphone() << std::endl;
+	static int GetNumberOfIphone(void);
 	
-	return (0);	
-}
+private:
+	static int _NumberOfIphone;
 
+};
 /* ************************************************************************** */
+#endif

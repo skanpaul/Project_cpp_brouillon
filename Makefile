@@ -3,20 +3,23 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sorakann <sorakann@student.42.fr>          +#+  +:+       +#+         #
+#    By: ski <ski@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/16 09:44:43 by ski               #+#    #+#              #
-#    Updated: 2022/06/19 19:56:12 by sorakann         ###   ########.fr        #
+#    Updated: 2022/06/20 17:23:40 by ski              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
 # **************************************************************************** #
 CC		= g++
+# CC		= g++-11
+
 CFLAG	= -Wall -Wextra -Werror -std=c++98 -pedantic
 
 SRC		= 	Main.cpp \
-			class.AppleCollector.cpp
+			class.Iphone.cpp
+
 OBJ		= $(SRC:.cpp=.o)
 
 RM		= rm -f
@@ -25,7 +28,7 @@ RM		= rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAG) $(OBJPATH)$^ -o $(NAME)
+	$(CC) $(CFLAG) $^ -o $(NAME)
 
 clean:
 	$(RM) $(OBJ)
