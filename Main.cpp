@@ -6,7 +6,7 @@
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/22 13:32:51 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/22 14:16:03 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,6 @@ int main(void)
 {
 	Fleur	Rose;
 	Fleur	Coquelicot;
-	Fleur	*ptr_instance;
-
-	// Utilisation du pointeur d'instance
-	ptr_instance = &Coquelicot;
-	ptr_instance->NombreFleur = 36;
-	ptr_instance->Grandir();
-	std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
-	(*ptr_instance).NombreFleur = 43;
-	std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
 
 	// Création d'un pointeur d'attribut (pour toutes les instances)
 	int		Fleur::*ptr_n_fleur;
@@ -38,13 +29,7 @@ int main(void)
 	std::cout << "Le nombre de rose est " << Rose.NombreFleur << std::endl;
 	std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
 	
-	
-	void (Fleur::*ptr_fct)(void) const;
-	
-	ptr_fct = &Fleur::Grandir;
-	
-	(Rose.*ptr_fct)();
-	(ptr_instance->*ptr_fct)();
+
 
 	
 
@@ -52,3 +37,23 @@ int main(void)
 }
 
 /* ************************************************************************** */
+
+
+// Fleur	*ptr_instance;
+
+// // Utilisation du pointeur d'instance
+// ptr_instance = &Coquelicot;
+// ptr_instance->NombreFleur = 36;
+// ptr_instance->Grandir();
+// std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
+// (*ptr_instance).NombreFleur = 43;
+// std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
+
+
+
+// void (Fleur::*ptr_fct)(void) const;
+
+// ptr_fct = &Fleur::Grandir;
+
+// (Rose.*ptr_fct)();
+// (ptr_instance->*ptr_fct)();
