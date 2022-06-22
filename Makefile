@@ -6,7 +6,7 @@
 #    By: ski <ski@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/16 09:44:43 by ski               #+#    #+#              #
-#    Updated: 2022/06/22 10:39:32 by ski              ###   ########.fr        #
+#    Updated: 2022/06/22 11:21:21 by ski              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,9 @@ CC		= g++-11
 
 CFLAG	= -Wall -Wextra -Werror -std=c++98 -pedantic
 
-SRC		= 	Main.cpp \
-			class.Iphone.cpp
+SRC		= 	$(wildcard *cpp)
+# SRC		= 	Main.cpp \
+# 			class.Iphone.cpp
 
 OBJ		= $(SRC:.cpp=.o)
 
