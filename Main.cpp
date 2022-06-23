@@ -6,7 +6,7 @@
 /*   By: ski <ski@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 07:52:55 by ski               #+#    #+#             */
-/*   Updated: 2022/06/22 14:16:03 by ski              ###   ########.fr       */
+/*   Updated: 2022/06/23 10:29:55 by ski              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,13 @@ int main(void)
 	Fleur	Rose;
 	Fleur	Coquelicot;
 
-	// Création d'un pointeur d'attribut (pour toutes les instances)
-	int		Fleur::*ptr_n_fleur;
-	// Affectation du pointeur à un attribut de la classe/instance
-	ptr_n_fleur = &Fleur::NombreFleur;
-	// Utilisation du pointeur d'attribut
-	Rose.*ptr_n_fleur = 6;
-	Coquelicot.*ptr_n_fleur = 12;
-	std::cout << "Le nombre de rose est " << Rose.NombreFleur << std::endl;
-	std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
 	
+	void (Fleur::*ptr_fct)(void) const;
 
+	ptr_fct = &Fleur::Grandir;
 
+	(Rose.*ptr_fct)();
+	(Coquelicot.*ptr_fct)();
 	
 
 	return (0);	
@@ -51,9 +46,14 @@ int main(void)
 
 
 
-// void (Fleur::*ptr_fct)(void) const;
 
-// ptr_fct = &Fleur::Grandir;
 
-// (Rose.*ptr_fct)();
-// (ptr_instance->*ptr_fct)();
+// // Création d'un pointeur d'attribut (pour toutes les instances)
+// int		Fleur::*ptr_n_fleur;
+// // Affectation du pointeur à un attribut de la classe/instance
+// ptr_n_fleur = &Fleur::NombreFleur;
+// // Utilisation du pointeur d'attribut
+// Rose.*ptr_n_fleur = 6;
+// Coquelicot.*ptr_n_fleur = 12;
+// std::cout << "Le nombre de rose est " << Rose.NombreFleur << std::endl;
+// std::cout << "Le nombre de coquelicot est " << Coquelicot.NombreFleur << std::endl;
